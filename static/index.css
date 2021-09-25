@@ -1,0 +1,113 @@
+
+header{
+    width: 90vw;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 2.25em;
+    
+    /* padding-right: 10px; */
+}
+header img{
+    height: 20vh;
+    width: auto;
+}
+.container{
+    margin: 10px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-header{
+    font-size: 1.5em;
+    width: 90vw;
+}
+.main-content{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.main-content p{
+    width: 80%;
+    padding-right: 10%;
+}
+.main-button{
+    width: 90vw;
+    height: 50px;
+    display: grid;
+    place-items: center;
+}
+.main-button button{
+    text-decoration: none;
+    width:20%;
+    height: 100%;
+    font-size: 1.5em;
+    border-radius: 10px;
+    
+}
+.main-button button:hover{
+    font-size: 1.6em;
+    width: 21%;
+    height: 110%;
+}
+footer{
+    width: 90vw;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-me{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.circle img
+{
+    width: 100px;
+    height: 100px;
+    overflow:hidden;
+    background-color: white;
+    margin: 10px;
+    border : 5px solid white;
+    border-radius: 100%;
+}
+.social-handles{
+    display: flex;
+}
+.social-handles *{
+    padding-left: 10px;
+    color: white;
+}
+@media only screen  and (max-width : 650px) {
+    header{
+        flex-direction: column-reverse;
+        width: 100vw;
+        height: fit-content;
+    }
+    header img{
+        width: 30vw;
+        height: auto;
+    }
+    header h1{
+        font-size: 1em;
+    }
+    .main-button {
+        height: 30px;
+    }
+    .main-button button{
+        font-size: 1em;
+        width: fit-content;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .main-button button:hover{
+        font-size: 1.25em;
+        width: max-content;
+    }
+}

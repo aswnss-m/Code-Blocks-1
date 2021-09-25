@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.bebas{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+}
+.mont-thin{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+.mont-thin-italic{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.mont-extra-light{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+.mont-extra-light-italic{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.mont-light{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.mont-light-italic{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+.mont-regular{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.mont-regular-italic{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.mont-medium{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.mont-medium-italic{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+.mont-semi-bold{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.mont-semi-bold-italic{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+.mont-bold{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.mont-bold-italic{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.mont-extra-bold{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.mont-extra-bold-italic{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+.mont-black{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.mont-black-italic{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+.bg-darker{
+    background-color: #2b3531ff;
+}
+.txt-darker{
+    color: #2b3531ff;
+}
+.bg-dark{
+    background-color: #677662ff;
+}
+.txt-dark{
+    color: #677662ff;
+}
+.bg-red-dark{
+    background-color: #b53a25ff;
+}
+.txt-red-dark{
+    color: #b53a25ff;
+}
+.bg-light{
+    background-color: #91a88cff;
+}
+.txt-light{
+    color: #91a88cff;
+}
+.bg-red-light{
+    background-color: #f74700ff;
+}
+.txt-red-light{
+    color: #f74700ff;
+}
+.txt-white{
+    color: white;
+}
