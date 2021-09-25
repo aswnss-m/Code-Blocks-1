@@ -21,6 +21,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 30px;
 }
 .main-header{
     font-size: 1.5em;
@@ -37,23 +38,19 @@ main{
     padding-right: 10%;
 }
 .main-button{
-    width: 90vw;
-    height: 50px;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
-.main-button button{
+
+.main-button a{
     text-decoration: none;
-    width:20%;
-    height: 100%;
     font-size: 1.5em;
     border-radius: 10px;
-    
+    padding:10px;
 }
-.main-button button:hover{
+.main-button a:hover{
     font-size: 1.6em;
-    width: 21%;
-    height: 110%;
 }
 footer{
     width: 90vw;
@@ -61,7 +58,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .about-me{
     display: flex;
@@ -99,15 +96,15 @@ footer{
         font-size: 1em;
     }
     .main-button {
-        height: 30px;
+        margin-top: 0;
     }
-    .main-button button{
+    .main-button a{
         font-size: 1em;
         width: fit-content;
         padding-left: 20%;
         padding-right: 20%;
     }
-    .main-button button:hover{
+    .main-button a:hover{
         font-size: 1.25em;
         width: max-content;
     }
@@ -115,5 +112,6 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 0;
     }
 }
