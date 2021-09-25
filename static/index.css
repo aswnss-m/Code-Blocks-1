@@ -61,6 +61,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
 }
 .about-me{
     display: flex;
@@ -109,5 +110,10 @@ footer{
     .main-button button:hover{
         font-size: 1.25em;
         width: max-content;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
