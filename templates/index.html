@@ -1,36 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Meta Tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Aswin Lal"> 
-    <meta name="description" content="A collection of code snippets for web developers, including code for HTML, CSS, JavaScript. Use These in your websites. This Project is born out of Digital Ocean's hactoberfest ' 21.">
+{%extends 'base.html'%}
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-    <!-- CDN -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/71afee2565.js" crossorigin="anonymous"></script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="static/styles.css">
+{%block head%}
     <link rel="stylesheet" href="static/index.css">
-
-
     <!-- Title -->
     <title>Code Blocks</title>
-</head>
-<body class="bg-darker">
+{%endblock%}
+{%block body%}
     <section class="flex-center container" >
         <header >
             <h1 class="mont-extra-bold txt-white" data-aos="fade-right" data-aos-duration="1500">@ Code - Block</h1>        
-            <img src="assets/H-icon-light.png" alt="Hacktober-fest-icon" data-aos="fade-left" data-aos-duration="1500">
+            <img src="{{url_for('static',filename='assets/H-icon-light.png')}}" alt="Hacktober-fest-icon" data-aos="fade-left" data-aos-duration="1500">
         </header>
     </section>
     <section class="flex-center">
@@ -49,7 +28,7 @@
                 </p>
             </div>
             <div class="main-button">
-                <a href="projects.html" class="txt-white bg-red-light mont-semi-bold shadow" data-aos="fade-up" data-aos-duration="1500">
+                <a href="projects" class="txt-white bg-red-light mont-semi-bold shadow" data-aos="fade-up" data-aos-duration="1500">
                     CLICK ME
                 </a>
             </div>
@@ -57,7 +36,7 @@
         <footer>
             <div class="about-me" >
                 <div class="circle">
-                    <img src="assets/aswinlal.jpg" alt="aswin lal">
+                    <img src="{{url_for('static',filename ='assets/aswinlal.jpg')}}" alt="aswin lal">
                 </div>
                 <div class="about-me-content" >
                     <p class="mont-light-italic txt-white">maintained by,</p>
@@ -81,5 +60,5 @@
     <script>
         AOS.init();
       </script>
-</body>
+{%endblock%}
 </html>

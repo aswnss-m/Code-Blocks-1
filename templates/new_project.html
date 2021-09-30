@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+{%block head%}
+    <title>Projects</title>
+{%endblock%}
+{%block body%}
+<ul>
+    {% for file in files %}
+    <li>
+        <a href="{{url_for('showcase')}}">
+            {{file.split('/')[0]}}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+<h1>Helo World</h1>
+{%endblock%}

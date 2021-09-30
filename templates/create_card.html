@@ -1,0 +1,47 @@
+{%extends 'base.html'%}
+{%block head%}
+<link rel="stylesheet" href="static/create_card.css" />
+<title>Create Card</title>
+{%endblock%}
+{%block body%}
+<div class="login-box">
+  <h2>Generate Card HTML</h2>
+  <form>
+    <div class="user-box">
+      <input type="text" name="title" required="" />
+      <label>Project Title</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="descp" required="" />
+      <label>Project Description</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="contr" required="" />
+      <label for="">Your Name</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="contr-github" required="" />
+      <label for="">Your Photo location in file (* if any)</label>
+    </div>
+    <div class="user-box">
+      <input type="url" name="contr-github" required="" />
+      <label for="">github link</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="contr-github" required="" />
+      <label for=""
+        >#html #css #js &nbsp;&nbsp;&nbsp;&nbsp;(enter seperated by
+        whitespace)</label
+      >
+    </div>
+
+    <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit
+    </a>
+  </form>
+</div>
+{%endblock%}

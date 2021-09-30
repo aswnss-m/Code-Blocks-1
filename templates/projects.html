@@ -1,30 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Meta Tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Aswin Lal"> 
-    <meta name="description" content="A collection of code snippets for web developers, including code for HTML, CSS, JavaScript. Use These in your websites. This Project is born out of Digital Ocean's hactoberfest ' 21.">
+{%extends 'base.html'%}
+{%block head%}
+<link rel="stylesheet" href="{{url_for('static',filename='projects.css')}}">
+<title>code-blocks | projects</title>
+{%endblock%}
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-    <!-- CDN -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/71afee2565.js" crossorigin="anonymous"></script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="static/styles.css">
-    <link rel="stylesheet" href="static/projects.css">
-
-    <title>code-blocks | projects</title>
-</head>
-<body class="bg-darker">
+{%block body%}
     <section class="flex-center">
     <header>
         <h1 class="mont-extra-bold txt-white">@ Code - Block</h1>
@@ -38,7 +18,7 @@
                 <div class="card-left bg-red-dark">
                     <div class="card-contributer-picture">
             
-                        <img src="assets/aswinlal.jpg" alt="Aswin Lal">
+                        <img src="{{url_for('static',filename='assets/aswinlal.jpg')}}" alt="Aswin Lal">
             
                     </div>
                     <div class="card-contributer-name">
@@ -49,7 +29,7 @@
                 </div>
                 <div class="card-right bg-dark">
                     <div class="card-header mont-bold txt-white">
-                        <a href="projects/CSS 3D Blend Mode Buttons/index.html">
+                        <a href="{{url_for('static',filename='projects/CSS 3D Blend Mode Buttons/index.html')}}">
                         <h4 class="hover-underline-animation">CSS 3D Blend Mode Buttons</h4>
                         </a>
 
@@ -78,5 +58,4 @@
     </main>
     <footer></footer>
     </section>
-</body>
-</html>
+{%endblock%}
